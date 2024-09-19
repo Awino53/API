@@ -20,14 +20,14 @@ form.addEventListener("submit", (event)=>{
     event.preventDefault()//stop the form from initiating a http request 
     const country = document.getElementById("search-word").value
     getCountryData(country)
-
 })
+
 //build UI function
 const countryDiv = document.querySelector(".country")
 function buildUI(data) {
     if (country.status == 404){
         countryDiv.innerHTML =  `<p style= "color: orangered"> country not found </P>`
     }else{
-        county = country[0]
+        county = country[0]     
     }
 }
